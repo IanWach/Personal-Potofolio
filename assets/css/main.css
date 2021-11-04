@@ -667,8 +667,10 @@
 
 	ul {
 		list-style: disc;
-		margin: 0 0 2em 0;
+		margin: 0 0 2em 40px;
 		padding-left: 1em;
+		grid-row: 1/  4 span;
+		grid-column:4;
 	}
 
 		ul li {
@@ -697,10 +699,13 @@
 		}
 
 			ul.icons li {
-				display: inline-block;
+				display: flex;
+				flex-flow: row;
 				text-align: center;
 				padding-left: 0;
 				padding-right: 1em;
+				
+				
 			}
 
 				ul.icons li a {
@@ -727,6 +732,9 @@
 
 				ul.icons li:last-child {
 					padding-right: 0;
+				}
+				ul.icons li a{
+					color: #0077ff;
 				}
 
 		ul.actions {
@@ -1364,13 +1372,53 @@
 /* Footer */
 
 	#footer {
-		padding: 4em 0 2em 0;
-		background-color: #1b1b1f;
+		padding: 2em 0 2em 0;
+		background-color: #000000;
 		text-align: center;
+		color: white;
+		font-family: 'Times New Roman', Times, serif;
+		word-spacing: 5px;
+		font-size: 20px;
+	}
+	
+	#footer-para{
+		grid-row: 1 / span 3; 
+		grid-column: 3;
+		width: 80%;
+		margin: 60px 70px 0px 70px;
+		text-align: left;
+	}
+	#footer-para::first-letter{
+		float: left;
+    font-size: 85px;
+    line-height: 1;
+    font-weight: bold;
+    margin-right: 15px
+	}
+	#footer-para::first-line{
+     line-height: normal;
+	}
+	#footer-head{
+		grid-row: 1 / span 3; 
+		grid-column: 1;
+		margin: 0 30px;
+		border: #000000 solid 2px;
+		padding: 10px ;
+		margin-bottom: 40px;
+		
+	}
+	#footer-head h2{
+		font-weight: bold;
+		color: salmon;
+	}
+	.avatar{
+		border-radius: 100%;
+		width: 150px;
 	}
 
 		#footer .inner {
-			width: 50%;
+			width: 90%;
+			display: grid;
 			margin: 0 auto;
 		}
 
@@ -1388,14 +1436,19 @@
 					width: 90%;
 				}
 
+				
 			}
 
 		#footer .copyright {
-			color: rgba(255, 255, 255, 0.5);
+			color: rgba(4, 245, 97, 0.5);
 			font-size: 0.9em;
 			margin: 0 0 2em 0;
 			padding: 0;
 			text-align: center;
+		}
+
+		ul .icons li a:nth-child(1){
+			color: rgb(0, 140, 255);
 		}
 
 		@media screen and (max-width: 736px) {

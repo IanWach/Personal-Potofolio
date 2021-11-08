@@ -563,6 +563,15 @@
 			padding: 1.5em;
 			width: 100% !important;
 		}
+		.box p {
+				color: #fbf6dc;
+				font-weight: 500;
+				text-align: justify;
+			}
+		.box h3{
+			color: #ff8686;
+			text-align: justify;
+		}
 
 			@media screen and (max-width: 480px) {
 
@@ -704,6 +713,7 @@
 				text-align: center;
 				padding-left: 0;
 				padding-right: 1em;
+				margin-top: 10px;
 				
 				
 			}
@@ -1039,7 +1049,7 @@
 			input[type="button"].style2:hover,
 			button.style2:hover,
 			.button.style2:hover {
-				background-color: #92a2d6;
+				background-color: #2f58df;
 			}
 
 			input[type="submit"].style2:active,
@@ -1063,7 +1073,7 @@
 			input[type="button"].style3:hover,
 			button.style3:hover,
 			.button.style3:hover {
-				background-color: #ab91d7;
+				background-color: #7735e9;
 			}
 
 			input[type="submit"].style3:active,
@@ -1373,7 +1383,7 @@
 
 	#footer {
 		padding: 2em 0 2em 0;
-		background-color: #000000;
+		background-color: #200e26c4;
 		text-align: center;
 		color: white;
 		font-family: 'Times New Roman', Times, serif;
@@ -1402,26 +1412,40 @@
 		grid-row: 1 / span 3; 
 		grid-column: 1;
 		margin: 0 30px;
-		border: #000000 solid 2px;
+		border:auto solid 2px;
 		padding: 10px ;
 		margin-bottom: 40px;
 		
 	}
 	#footer-head h2{
 		font-weight: bold;
-		color: salmon;
+		color: #E69A8DFF;
 	}
 	.avatar{
 		border-radius: 100%;
 		width: 150px;
 	}
+	#footer-head h4{
+		color: #e0a7f3;
 
-		#footer .inner {
+	}
+	#footer-head h5{
+		color: #fa6666;
+	}
+	#footer .inner {
 			width: 90%;
 			display: grid;
 			margin: 0 auto;
-		}
-
+	}
+	html {
+			overflow: hidden;
+			height: 100%;
+	}
+		
+	body {
+			overflow: auto;
+			height: 100%;
+	}
 			@media screen and (max-width: 980px) {
 
 				#footer .inner {
@@ -1448,7 +1472,7 @@
 		}
 
 		ul .icons li a:nth-child(1){
-			color: rgb(0, 140, 255);
+			color: rgb(0, 204, 255);
 		}
 
 		@media screen and (max-width: 736px) {
